@@ -19,17 +19,27 @@ const createNavigationMenu = () => {
     nav.appendChild(ContactLink);
 
     HomeLink.addEventListener('click', () => {
+        clearContent();
         createHomePage();
     })
 
     MenuLink.addEventListener('click', () => {
+        clearContent()
         createMenuPage();
     })
 
     ContactLink.addEventListener('click', () => {
+        clearContent()
         createContactPage();
     })
 
+}
+
+function clearContent() {
+    const content = document.querySelector("#content");
+    if (content) {
+        content.innerHTML = "";
+    }
 }
 
 export default createNavigationMenu;
