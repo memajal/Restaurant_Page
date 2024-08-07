@@ -1,5 +1,5 @@
 
-//
+
 import createHomePage from './homepage.js'
 
 function initialPageLoad() {
