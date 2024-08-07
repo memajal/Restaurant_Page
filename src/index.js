@@ -1,2 +1,6 @@
 
-console.log("Hello! Prova Prova");
+
+import initialPageLoad from './loadpage';
+
+//load the page
+initialPageLoad();
