@@ -1,9 +1,11 @@
 
 
-import createHomePage from './homepage.js'
+import createHomePage from './homepage';
+import createNavigationMenu from './navigation';
 
 function initialPageLoad() {
     createHomePage();
+    createNavigationMenu();
 
 }
 
