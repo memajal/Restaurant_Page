@@ -8,6 +8,7 @@ const createNavigationMenu = () => {
 
     const HomeLink = document.createElement("button");
     HomeLink.innerHTML = "Home";
+    HomeLink.classList = "active";
     nav.appendChild(HomeLink);
 
     const MenuLink = document.createElement("button");

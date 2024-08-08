@@ -1,0 +1,122 @@
+
+html{
+    margin: 0px;
+    padding:0px;
+
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('Montserrat_Font.woff2') format('woff2'), url('Montserrat_Font.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont2';
+    src: url('./VariableFont.woff2') format('woff2'); 
+}
+
+@font-face {
+    font-family: 'MyFont3';
+    src: url('./PatrickHandSC-Regular.woff2') format('woff2');
+}
+
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(2,173,231,0.5), rgba(2,173,231,0.5)), url("homepage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: MyFont;
+}
+
+#menu{
+    position:relative;
+    margin-top: 50vh;
+    border: 5px solid black;
+    width: auto;
+    
+}
+
+#content h1 {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 3em;
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-family: MyFont3;
+}
+
+#content h2 {
+    color: #F7DA71;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: -3px;
+    font-family: MyFont2;
+}
+
+#content h3 {
+    color: white;
+    text-transform: uppercase;
+    margin: 0px;
+    padding-top: 0px;
+    font-size: 5em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-family: MyFont3;
+    font-weight:bold;  
+}
+
+#content p {
+    color: white;
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom:0px;
+    font-family: MyFont3;
+    font-size: 2em;
+    line-height: 0.9;
+    background: linear-gradient(to right, #eee 0%, #F7DA71 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#menu {
+    margin: 50px auto;
+    width:auto;
+    height: 50px;
+    background-color:white;
+    border-radius:20px;
+    border-color:white;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap:20px;
+}
+
+    #menu button {
+        background-color: inherit;
+        border: none;
+        font-family: MyFont2;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 1.1em;
+        border-radius: 20px;
+    }
+
+#menu button:hover{
+    background-color:black;
+    color:white;
+}
+
+
+

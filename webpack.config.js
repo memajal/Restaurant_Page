@@ -4,8 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: './src/index.js',
-
-    // tell the dev server where to look for files. webpack-watch use live reloading
     devtool: 'inline-source-map',
 
     output: {
@@ -13,6 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
     },
 
+    // tell the dev server where to look for files. webpack-watch use live reloading
     plugins: [
 
         new HtmlWebpackPlugin({
@@ -22,6 +21,23 @@ module.exports = {
 
         })
 
-        ]
+    ],
+
+    module: {
+        rules: [
+
+            // handle styles
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+
+            // handle font files
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+            },
+        ],
+    },
 
 };
