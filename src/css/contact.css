@@ -1,0 +1,157 @@
+
+#content_contact {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(2,173,231,0.5), rgba(2,173,231,0.5)), url("contact.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    font-family: MyFont;
+}
+
+#content_contact_left {
+    width: 50%;
+    text-align: center;
+}
+
+#content_contact_right {
+    width: 50%;
+    background-color: #110e0e;
+}
+
+#content_contact h1 {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 3em;
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-family: MyFont3;
+}
+
+#content_contact h2 {
+    color: #F7DA71;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: -3px;
+    font-family: MyFont2;
+}
+
+#content_contact h3 {
+    color: white;
+    text-transform: uppercase;
+    margin: 0px;
+    padding-top: 0px;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-family: MyFont3;
+    font-weight: bold;
+}
+
+#content_contact #menu {
+    width: 70%;
+}
+
+#content_contact #home_button, #content_contact #menu_button {
+    background-color: white;
+    color: black;
+}
+
+#content_contact #contact_button {
+    background-color: black;
+    color: white;
+}
+
+#content_contact #home_button:hover, #content_contact #menu_button:hover, #content_contact #contact_button:hover {
+    background-color: #F7DA71;
+    color: black;
+}
+
+#content_contact_right {
+    overflow: scroll;
+    padding-bottom: 100px;
+}
+
+    #content_contact_right p {
+        color: white;
+        margin: 100px auto 20px;
+        width: 85%;
+        padding-bottom: 0px;
+        font-family: MyFont3;
+        font-size: 1.5em;
+        font-style: italic;
+        line-height: 1.2;
+        background: linear-gradient(to right, white 0%, #F7DA71 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    width:85%;
+    margin: 50px auto;
+}
+
+    form label {
+        display: block;
+        color: white;
+        font-family: MyFont2;
+        color: #F7DA71;
+        font-size: 1em;
+        padding-top: 15px;
+        padding-bottom:15px;
+    }
+
+    form input {
+        border: 1px solid rgba(207, 205, 205, 0.446);
+        border-radius: 25px;
+        height: 50px;
+        width: 90%;
+        background-color: black;
+        color: white;
+        font-family: MyFont3;
+        font-weight: bold;
+        font-size: 1.5em;
+        padding-left: 20px;
+    }
+
+        form input::placeholder, textarea::placeholder {
+            font-family: MyFont3;
+            font-weight:bold;
+            font-size: 1.2em;
+            padding-left: 20px;
+        }
+
+textarea {
+    border: 1px solid rgba(207, 205, 205, 0.446);
+    border-radius: 25px;
+    width: 90%;
+    height:100px;
+    background-color: black;
+    color: white;
+    font-family: MyFont3;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+
+input[type=submit] {
+    background-color: #F7DA71;
+    color: black;
+    width: 92%;
+    font-family: MyFont3;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+      

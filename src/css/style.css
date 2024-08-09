@@ -1,8 +1,8 @@
 
-html{
+html {
     margin: 0px;
-    padding:0px;
-
+    padding: 0px;
+    overflow: hidden;
 }
 
 @font-face {
@@ -21,7 +21,7 @@ html{
 }
 
 
-body {
+#content_home {
     overflow: hidden;
     height: 100vh;
     background: linear-gradient(0deg, rgba(2,173,231,0.5), rgba(2,173,231,0.5)), url("homepage.png");
@@ -34,14 +34,12 @@ body {
 }
 
 #menu{
-    position:relative;
-    margin-top: 50vh;
     border: 5px solid black;
     width: auto;
     
 }
 
-#content h1 {
+#content_home h1 {
     position: relative;
     display: inline-block;
     color: white;
@@ -51,7 +49,7 @@ body {
     font-family: MyFont3;
 }
 
-#content h2 {
+#content_home h2{
     color: #F7DA71;
     text-transform: uppercase;
     margin-top: 0px;
@@ -63,7 +61,7 @@ body {
     font-family: MyFont2;
 }
 
-#content h3 {
+#content_home h3 {
     color: white;
     text-transform: uppercase;
     margin: 0px;
@@ -75,7 +73,7 @@ body {
     font-weight:bold;  
 }
 
-#content p {
+#content_home p {
     color: white;
     margin-top: 0px;
     padding-top: 0px;
@@ -84,8 +82,10 @@ body {
     padding-bottom:0px;
     font-family: MyFont3;
     font-size: 2em;
+    font-style:italic;
+    font-weight:bold;
     line-height: 0.9;
-    background: linear-gradient(to right, #eee 0%, #F7DA71 100%);
+    background: linear-gradient(to right, white 0%, #F7DA71 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -104,7 +104,7 @@ body {
 }
 
     #menu button {
-        background-color: inherit;
+        background-color: none;
         border: none;
         font-family: MyFont2;
         padding-left: 30px;
@@ -113,10 +113,13 @@ body {
         border-radius: 20px;
     }
 
-#menu button:hover{
-    background-color:black;
+        #menu button:hover {
+            background-color: #F7DA71; 
+        }
+
+#home_button {
+    background-color: black;
     color:white;
 }
-
 
 

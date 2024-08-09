@@ -1,10 +1,13 @@
 
-import './css/home.css';
+import './css/style.css';
 
 // homepage.js
 
 const createHomePage = () => {
-    const content = document.querySelector("#content");
+
+    const content = document.createElement("div");
+    content.id = "content_home";
+    document.body.appendChild(content);
 
     const h1Content = document.createElement("h1");
     h1Content.textContent = "Sihana Restaurant";
@@ -22,8 +25,9 @@ const createHomePage = () => {
     paragraphContent.textContent = "Sihana Restaurant, your place for delicious Mediterranean tapas in the heart Hamburg. Located at Hamburg Altstadt we serve lovingly home-made dishes that are perfect to share with family, friends or colleagues.";
     content.appendChild(paragraphContent);
 
-
-
+    const nav = document.createElement("div");
+    nav.id = "menu";
+    content.appendChild(nav);
 
 }
 
